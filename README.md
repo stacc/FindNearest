@@ -8,6 +8,8 @@ Technologies used in this project is Deck.gl, Webpack, Google Maps and plain JS.
 ## What you need
 ```
 You need to get an API-key to access the Google Maps API from Google.
+
+https://developers.google.com/maps/documentation/javascript/get-api-key
 ```
 
 ## Project setup
