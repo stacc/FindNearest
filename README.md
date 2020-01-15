@@ -4,6 +4,12 @@ This is a part of a Girlpower workshop at Stacc.
 
 Technologies used in this project is Deck.gl, Webpack, Google Maps and plain JS.
 
+
+## What you need
+```
+You need to get an API-key to access the Google Maps API from Google.
+```
+
 ## Project setup
 ```
 npm
