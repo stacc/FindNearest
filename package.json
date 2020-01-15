@@ -1,0 +1,27 @@
+{
+  "name": "girlpower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --output-path ./public",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --content-base ./public --output-path ./public --hot",
+    "convert": "node convert.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "convert-csv-to-json": "0.0.15",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "@deck.gl/aggregation-layers": "^8.0.6",
+    "@deck.gl/core": "^8.0.6",
+    "@deck.gl/google-maps": "^8.0.6",
+    "@deck.gl/layers": "^8.0.6"
+  }
+}
