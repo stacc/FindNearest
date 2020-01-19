@@ -32,23 +32,15 @@
     }
   },
   "environment": {
+    "showide": true,
     "ide": "ssh host01 '/opt/start-vscode.sh'",
+    "idePort": 23000,
     "uilayout": "terminal-iframe-v1",
-    "uidependencies": [
-      "/socket.io/socket.io.js",
-      "/javascripts/term.js",
-      "/javascripts/terminal-application.js",
-      "/javascripts/theiaide-extension.js"
-    ],
     "showdashboard": true,
     "dashboards": [
       {
         "name": "Display 8080",
         "port": 8080
-      },
-      {
-        "name": "VS Code",
-        "port": 23000
       }
     ]
   },
