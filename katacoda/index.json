@@ -25,7 +25,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [{ "file": "*", "target": "/FindNearest" }]
+      "client": [{ "file": "../*", "target": "/FindNearest" }]
     }
   },
   "environment": {
