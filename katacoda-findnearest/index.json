@@ -29,7 +29,11 @@
   "environment": {
     "dashboards": [{ "name": "Display 8080", "port": 8080 }],
     "showdashboard": true,
+    "showide": true,
+    "ide": "ssh host01 '/opt/start-vscode.sh'",
+    "idePort": 23000,
     "uilayout": "editor-terminal-v1",
+    "uieditorpath": "/home/katacoda/FindNearest",
     "uidependencies": [
       "/socket.io/socket.io.js",
       "/javascripts/term.js",
