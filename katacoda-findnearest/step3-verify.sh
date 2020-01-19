@@ -1,6 +1,5 @@
-if [ -z "$GOOGLE_API_KEY" ]; then
-  echo "\$GOOGLE_API_KEY variable is not set"
-  echo "\$GOOGLE_API_KEY current value is \"$GOOGLE_API_KEY\""
+if [ -f "/root/FindNearest/.env" ]; then
+  echo ".env file does not exists"
 else
   echo "done"
 fi

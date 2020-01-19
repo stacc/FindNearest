@@ -1,6 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const { DefinePlugin } = require('webpack')
 const path = require('path')
+
+const dotenv = require('dotenv').config({path: __dirname + '/.env'})
 
 module.exports = {
   output: {
@@ -23,6 +26,9 @@ module.exports = {
         google: process.env.GOOGLE_API_KEY
       }
     }),
-    new CopyWebpackPlugin([{ from: 'public' }])
+    new CopyWebpackPlugin([{ from: 'public' }]),
+    new DefinePlugin({
+      'process.env': dotenv.parsed
+    })
   ]
 }
