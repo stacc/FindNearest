@@ -1,6 +1,6 @@
 # Configure API key in the project
 
-Open the `public/index.html`{{open}}
-
-And replace the `YOUR-API-KEY` with the one you just created
-
+Export the API key you just created as an environment variable
+```
+export GOOGLE_API_KEY=yourapikey
+```{{copy}}
