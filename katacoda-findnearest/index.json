@@ -32,7 +32,7 @@
   },
   "environment": {
     "showide": true,
-    "ide": "ssh host01 'mkdir -p /root/FindNearest && nohup /opt/katacoda-editor-vscode0.1-linux-x64 /root/FindNearest </dev/null >/dev/null 2>&1 &'",
+    "ide": "ssh host01 'nohup /opt/katacoda-editor-vscode0.1-linux-x64 /root/FindNearest </dev/null >/dev/null 2>&1 &'",
     "idePort": 23000,
     "uilayout": "iframe",
     "showdashboard": true,
