@@ -29,7 +29,6 @@
   },
   "environment": {
     "ide": "ssh host01 '/opt/start-vscode.sh'",
-    "idePort": 23000,
     "uilayout": "terminal-iframe-v1",
     "uidependencies": [
       "/socket.io/socket.io.js",
