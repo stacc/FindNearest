@@ -9,3 +9,8 @@ Enter the project directory
 ```
 cd FindNearest
 ```{{execute}}
+
+Download node dependencies
+```
+npm install
+```{{execute}}
