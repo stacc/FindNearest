@@ -17,5 +17,5 @@ npm install
 
 Open up the editor
 ```
-/root/FindNearest
+/root/FindNearest/public/index.html
 ```{{open}}
