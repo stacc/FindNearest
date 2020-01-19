@@ -38,7 +38,7 @@
     "showdashboard": true,
     "dashboards": [
       {
-        "name": "Display 8080",
+        "name": "Application",
         "port": 8080
       }
     ],
