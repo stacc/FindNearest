@@ -1,5 +1,5 @@
 {
-  "title": "FindNearest",
+  "title": "Find Nearest",
   "description": "Part of GirlPower workshops",
   "difficulty": "easy",
   "time": "30 minutes",
@@ -16,7 +16,7 @@
       },
       {
         "title": "Step 3",
-        "text": "step3.md",
+        "text": "step3.md"
       },
       {
         "title": "Step 4",
