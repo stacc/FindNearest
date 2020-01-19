@@ -3,6 +3,7 @@
   "description": "Part of GirlPower workshops",
   "difficulty": "easy",
   "time": "30 minutes",
+  "icon": "fa-node",
   "details": {
     "steps": [
       {
@@ -26,7 +27,6 @@
     }
   },
   "environment": {
-    "icon": "fa-node",
     "showide": true,
     "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
