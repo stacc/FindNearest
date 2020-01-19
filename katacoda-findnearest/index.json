@@ -32,7 +32,7 @@
     "idePort": 23000,
 
     "hideintro": false,
-    "uilayout": "terminal",
+    "uilayout": "editor-terminal",
     "showdashboard": true,
     "dashboards": [{ "name": "Display 8080", "port": 8080 }]
   },
