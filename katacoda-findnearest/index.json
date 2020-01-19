@@ -30,9 +30,10 @@
     "showide": true,
     "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
+    "idePath": "/root/FindNearest",
 
     "hideintro": false,
-    "uilayout": "editor-terminal",
+    "uilayout": "ide",
     "showdashboard": true,
     "dashboards": [{ "name": "Display 8080", "port": 8080 }]
   },
