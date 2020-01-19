@@ -23,6 +23,9 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [{ "file": "*", "target": "/FindNearest" }]
     }
   },
   "environment": {
@@ -30,8 +33,10 @@
     "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
 
-    "hideintro": true,
-    "uilayout": "editor-terminal-split"
+    "hideintro": false,
+    "uilayout": "terminal",
+    "showdashboard": true,
+    "dashboards": [{ "name": "Display 8080", "port": 8080 }]
   },
   "backend": {
     "imageid": "ubuntu"
