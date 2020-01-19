@@ -32,20 +32,15 @@
   },
   "environment": {
     "showide": true,
-    "ide": "ssh host01 'nohup /opt/katacoda-editor-vscode0.1-linux-x64 /root/FindNearest </dev/null >/dev/null 2>&1 &'",
+    "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
-    "uilayout": "iframe",
+    "idePath": "/root/FindNearest",
+    "uilayout": "terminal-iframe",
     "showdashboard": true,
     "dashboards": [
       {
         "name": "Application",
         "port": 8080
-      }
-    ],
-    "terminals": [
-      {
-        "name": "Terminal 1",
-        "target": "host01"
       }
     ]
   },
