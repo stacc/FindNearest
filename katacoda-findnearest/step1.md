@@ -15,5 +15,4 @@ Download node dependencies
 npm install
 ```{{execute}}
 
-Open up the editor
-`public/index.html`{{open}}
+Open the project folder in VS Code by entering the IDE tab in your window. Go to `File -> Open Folder` and open the `/root/FindNearest` folder.
