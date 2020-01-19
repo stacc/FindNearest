@@ -28,7 +28,7 @@
   "environment": {
     "icon": "fa-node",
     "showide": true,
-    "ide": "mkdir -p /root/FindNearest && ssh host01 '/opt/start-vscode.sh -d /root/FindNearest'",
+    "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
 
     "hideintro": false,
