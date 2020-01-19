@@ -29,7 +29,6 @@
   "environment": {
     "dashboards": [{ "name": "Display 8080", "port": 8080 }],
     "showdashboard": true,
-    "uieditorpath": "/home/katacoda/FindNearest",
     "uilayout": "editor-terminal-v1",
     "uidependencies": [
       "/socket.io/socket.io.js",
