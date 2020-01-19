@@ -27,24 +27,30 @@
     }
   },
   "environment": {
-    "dashboards": [{ "name": "Display 8080", "port": 8080 }],
-    "showdashboard": true,
     "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
-    "uilayout": "editor-terminal-v1",
-    "uieditorpath": "/home/katacoda/FindNearest",
+    "uilayout": "terminal-iframe-v1",
     "uidependencies": [
       "/socket.io/socket.io.js",
       "/javascripts/term.js",
-      "/js/vendor/ace/ace.js",
-      "/js/editor.js",
       "/javascripts/terminal-application.js",
-      "/javascripts/editor-terminal-application.js",
-      "/javascripts/sync-editor-to-container.js"
+      "/javascripts/theiaide-extension.js"
+    ],
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Display 8080",
+        "port": 8080
+      },
+      {
+        "name": "VS Code",
+        "port": 23000
+      }
     ]
   },
   "backend": {
-    "dockerimage": "ubuntu-base-image-v1",
-    "env": "bash"
+    "dockerimage": "dind1604-direct",
+    "env": "ubuntu",
+    "port": ""
   }
 }
