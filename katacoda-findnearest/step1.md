@@ -16,6 +16,4 @@ npm install
 ```{{execute}}
 
 Open up the editor
-```
-public/index.html
-```{{open}}
+`public/index.html`{{open}}
