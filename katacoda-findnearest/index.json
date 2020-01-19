@@ -30,10 +30,9 @@
     "showide": true,
     "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
-    "idePath": "/root/FindNearest",
-
     "hideintro": false,
     "uilayout": "terminal",
+    "uieditorpath": "/home/katacoda/FindNearest",
     "showdashboard": true,
     "dashboards": [{ "name": "Display 8080", "port": 8080 }]
   },
