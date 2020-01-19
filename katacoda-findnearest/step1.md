@@ -2,5 +2,10 @@
 
 Clone the github repository
 ```
-git clone https://github.com/stacc-as/FindNearest && cd FindNearest
+git clone https://github.com/stacc-as/FindNearest
+```{{execute}}
+
+Enter the project directory
+```
+cd FindNearest
 ```{{execute}}
