@@ -33,7 +33,6 @@
     "idePath": "/root/FindNearest",
 
     "hideintro": false,
-    "uilayout": "ide",
     "showdashboard": true,
     "dashboards": [{ "name": "Display 8080", "port": 8080 }]
   },
