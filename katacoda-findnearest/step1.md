@@ -14,3 +14,8 @@ Download node dependencies
 ```
 npm install
 ```{{execute}}
+
+Open up the editor
+```
+/root/FindNearest
+```{{open}}
