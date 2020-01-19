@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --output-path ./public",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --content-base ./public --output-path ./public --hot --host 0.0.0.0",
+    "start": "webpack-dev-server --content-base ./public --output-path ./public --hot --host 0.0.0.0 --disable-host-check",
     "convert": "node convert.js"
   },
   "keywords": [],
