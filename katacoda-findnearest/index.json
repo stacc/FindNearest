@@ -34,12 +34,18 @@
     "showide": true,
     "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
-    "uilayout": "terminal-iframe-v1",
+    "uilayout": "iframe",
     "showdashboard": true,
     "dashboards": [
       {
         "name": "Display 8080",
         "port": 8080
+      }
+    ],
+    "terminals": [
+      {
+        "name": "Terminal 1",
+        "target": "host01"
       }
     ]
   },
