@@ -5,18 +5,38 @@ import { styles } from './styles';
 
 const sourceData = './dokart.json';
 
+const positionData = [
+  {
+    "id": 20,
+    "latitude": 60.3963703,
+    "longitude": 5.3242669,
+    "cleanliness": 1
+ },
+ {
+  "id": 1,
+  "latitude": 60.3879681,
+  "longitude": 5.334608,
+  "cleanliness": 1
+},
+
+]
+
 /* Second assignment */
 const emergencyNow = () => new LineLayer({
     id: 'line-layer',
-    data: sourceData,
-    getWidth: 50,
-    getSourcePosition: [{'longitude':60.3785947, 'latitude': 5.3249661}],
-    getTargetPosition: [{'longitude': 60.3855625, 'latitude': 5.3237014}],
+    data: positionData,
+    getWidth: 10,
+    getSourcePosition: d => [positionData[0].longitude, positionData[0].latitude],
+    getTargetPosition: d => [positionData[1].longitude, positionData[1].latitude],
     getColor: d => [200, 0, 40, 150],
     pickable: true,
     onHover: ({object, x, y}) => {
-      const tooltip = `'Damsgårdsveien 50' til 'Nygårdsparken Paviljongen'`
-    }
+      const el = document.getElementById('tooltip');
+      if (object) {
+        const { id, adresse, cleanliness } = object;
+        el.innerHTML = `<h3>${adresse}</h3>`
+      }
+  }
 });
 
 /* First assignment: add a filter based on best rating */
