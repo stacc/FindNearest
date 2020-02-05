@@ -13,22 +13,22 @@ const positionData = [
     "cleanliness": 1
  },
  {
-  "id": 1,
-  "latitude": 60.3879681,
-  "longitude": 5.334608,
-  "cleanliness": 1
+    "id": 1,
+    "latitude": 60.3785947,
+    "longitude": 5.3249661,
+    "cleanliness": 1
 },
 
 ]
 
 /* Second assignment */
-const emergencyNow = () => new LineLayer({
+const emergencyNow = (data) => new LineLayer({
     id: 'line-layer',
-    data: positionData,
-    getWidth: 10,
-    getSourcePosition: d => [positionData[0].longitude, positionData[0].latitude],
-    getTargetPosition: d => [positionData[1].longitude, positionData[1].latitude],
-    getColor: d => [200, 0, 40, 150],
+    data: data,
+    getWidth: 100,
+    getSourcePosition: d => d.start,
+    getTargetPosition: d => d.end,
+    getColor: d => [138, 255, 119],
     pickable: true,
     onHover: ({object, x, y}) => {
       const el = document.getElementById('tooltip');
@@ -68,6 +68,20 @@ const ratingoverlay = () => new ScatterplotLayer({
   }
 });
 
+const hexagon = () => new HexagonLayer({
+  id: 'hex',
+  data: sourceData,
+  getPosition: d => [d.longitude, d.latitude],
+  getElevationWeight: d => (d.pris * 2),
+  elevationScale: 2,
+  extruded: true,
+  radius: 150,         
+  opacity: 0.6,        
+  coverage: 0.88,
+  lowerPercentile: 50
+});
+
+
 
 const scatterplot = () => new ScatterplotLayer({
     id: 'toiletView',
@@ -100,19 +114,6 @@ const scatterplot = () => new ScatterplotLayer({
     }
 });
 
-const hexagon = () => new HexagonLayer({
-  id: 'hex',
-  data: sourceData,
-  getPosition: d => [d.longitude, d.latitude],
-  getElevationWeight: d => (d.pris * 2),
-  elevationScale: 2,
-  extruded: true,
-  radius: 150,
-  opacity: 0.6,
-  coverage: 0.88,
-  lowerPercentile: 50
-});
-
 const selectedView = () => {
   var header = document.getElementById("control-panel");
   var btns = header.getElementsByClassName("button");
@@ -126,20 +127,75 @@ const selectedView = () => {
   }
 }
 
+const getCurrentPosition = () => {
+  let pos = []
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      pos = [
+          position.coords.latitude,
+          position.coords.longitude
+      ];
+    }, function() {
+      handleLocationError(true, infoWindow, map.getCenter());
+    });
+  } else {
+    pos = [60.3785947,5.3249661]
+  }
+  return pos
+}
+
+
 
 window.initMap = () => {
+    var directionsService = new google.maps.DirectionsService();
     const map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: 60.39, lng: 5.32 },
         zoom: 15,
         styles: styles
-    });
+    }); 
+   
+      var start = new google.maps.LatLng(60.3785947,5.3249661);
+      var end = new google.maps.LatLng(60.3963703,5.3242669);
+      
+      var request = {
+        origin: start,
+        destination: end,
+        travelMode: 'WALKING'
+      };
 
-    const overlay = new GoogleMapsOverlay({
-      layers: [
-        scatterplot()
-      ],
-    });
+      const overlay = new GoogleMapsOverlay({
+        layers: [
+          scatterplot()
+        ],
+      });
 
+      directionsService.route(request, function(result, status) {
+        if (status == 'OK') {
+          const res = result.routes[0].overview_path.map((p, index, paths) => {
+            if(index+1 < paths.length) {
+              return { 
+                "start": [p.lat(), p.lng()], 
+                "end": [paths[index+1].lat(), paths[index+1].lng()] 
+              }
+            }
+            else {
+              return { 
+                "start": [p.lat(), p.lng()], 
+                "end": [p.lat(), p.lng()]
+              }
+            }
+          })
+         
+          window.emergencyNow = () => {
+            overlay.setProps({
+              layers: [
+                emergencyNow(res.slice(1,3))
+              ],
+            });
+          }
+        }
+      });
+   
     selectedView();
     overlay.setMap(map);
 
