@@ -14,7 +14,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3879681,
-  "longitude": 5.334608
+  "longitude": 5.334608,
+  "cleanliness": 0
  },
  {
   "id": 2,
@@ -31,7 +32,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3884988,
-  "longitude": 5.3345382
+  "longitude": 5.3345382,
+  "cleanliness": 2
  },
  {
   "id": 3,
@@ -48,7 +50,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.388868,
-  "longitude": 5.3337597
+  "longitude": 5.3337597,
+  "cleanliness": 2
  },
  {
   "id": 4,
@@ -65,7 +68,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.39041,
-  "longitude": 5.332995
+  "longitude": 5.332995,
+  "cleanliness": 1
  },
  {
   "id": 5,
@@ -82,7 +86,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.394554,
-  "longitude": 5.324099
+  "longitude": 5.324099,
+  "cleanliness": 2
  },
  {
   "id": 6,
@@ -99,7 +104,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3951003,
-  "longitude": 5.3220606
+  "longitude": 5.3220606,
+  "cleanliness": 2
  },
  {
   "id": 7,
@@ -116,7 +122,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3913793,
-  "longitude": 5.3290558
+  "longitude": 5.3290558,
+  "cleanliness": 0
  },
  {
   "id": 8,
@@ -133,7 +140,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3891105,
-  "longitude": 5.3322315
+  "longitude": 5.3322315,
+  "cleanliness": 1
  },
  {
   "id": 9,
@@ -150,7 +158,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.392209,
-  "longitude": 5.324011
+  "longitude": 5.324011,
+  "cleanliness": 2
  },
  {
   "id": 10,
@@ -167,7 +176,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3927098,
-  "longitude": 5.3262019
+  "longitude": 5.3262019,
+  "cleanliness": 0
  },
  {
   "id": 11,
@@ -184,7 +194,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3932345,
-  "longitude": 5.3252363
+  "longitude": 5.3252363,
+  "cleanliness": 2
  },
  {
   "id": 12,
@@ -201,7 +212,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3944194,
-  "longitude": 5.3205649
+  "longitude": 5.3205649,
+  "cleanliness": 0
  },
  {
   "id": 13,
@@ -218,7 +230,8 @@
   "herre": "1",
   "pissoir_only": "NULL",
   "latitude": 60.3975913,
-  "longitude": 5.3244317
+  "longitude": 5.3244317,
+  "cleanliness": 0
  },
  {
   "id": 14,
@@ -235,7 +248,8 @@
   "herre": "NULL",
   "pissoir_only": "1",
   "latitude": 60.3973581,
-  "longitude": 5.3132629
+  "longitude": 5.3132629,
+  "cleanliness": 0
  },
  {
     "id": 15,
@@ -243,7 +257,8 @@
     "adresse": "Nygårdsparken Paviljongen",
     "pris": "NULL",
     "latitude": 60.3855625,
-    "longitude": 5.3237014
+    "longitude": 5.3237014,
+    "cleanliness": 1
  },
  {
     "id": 16,
@@ -256,7 +271,8 @@
     "dame": "NULL",
     "herre": "NULL",
     "latitude": 60.3846189,
-    "longitude": 5.3308129
+    "longitude": 5.3308129,
+    "cleanliness": 2
  },
  {
     "id": 17,
@@ -269,7 +285,8 @@
     "dame": "1",
     "herre": "1",
     "latitude": 60.394939,
-    "longitude": 5.3427039
+    "longitude": 5.3427039,
+    "cleanliness": 2
  },
  {
     "id": 18,
@@ -283,7 +300,8 @@
     "herre": "1",
     "rullestol": "1",
     "latitude": 60.3859536,
-    "longitude": 5.3381476
+    "longitude": 5.3381476,
+    "cleanliness": 2
  },
  {
     "id": 19,
@@ -297,7 +315,8 @@
     "herre": "1",
     "rullestol": "1",
     "latitude": 60.3979581,
-    "longitude": 5.3205746
+    "longitude": 5.3205746,
+    "cleanliness": 0
  },
  {
     "id": 20,
@@ -311,6 +330,7 @@
     "herre": "1",
     "rullestol": "1",
     "latitude": 60.3963703,
-    "longitude": 5.3242669
+    "longitude": 5.3242669,
+    "cleanliness": 1
  }
 ]
