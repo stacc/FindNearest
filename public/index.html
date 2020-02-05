@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/png" href="/images/toiletpaper.png"/>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=<%= htmlWebpackPlugin.options.apiKeys.google %>&callback=initMap"></script>
-    <link rel="stylesheet" href="./style.css" type="text/css"></link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="/images/toiletpaper.png"/>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=<%= htmlWebpackPlugin.options.apiKeys.google %>&callback=initMap"></script>
+  <link rel="stylesheet" href="./style.css" type="text/css"></link>
 </head>
 <body>
-    
-    <div id="map">
-    </div>
-    <section id="tooltip">
-    </section>
-    <section id="control-panel">
-        <span class="button" id="cleanliness" onClick="setCleanlinessRating()">Vis reinhald</span>
-        <span class="button active" id="price" onClick="setPriceOverview()">Vis pris</span>
-        <span class="button" id="heatmap" onClick="setHeatMap()">Dyraste område</span>
-        <span class="button" id="emergency" onClick="emergencyNow()">Emergency</span>
-        <span class="button" onClick="resetViews()">Tilbakestill</span>
-    </section>
+  <div id="map"></div>
+  <section id="tooltip"></section>
+  <section id="control-panel">
+    <span class="button" id="cleanliness" onClick="setCleanlinessRating()">Vis reinhald</span>
+    <span class="button active" id="price" onClick="setPriceOverview()">Vis pris</span>
+    <span class="button" id="heatmap" onClick="setHeatMap()">Dyraste område</span>
+    <span class="button" id="emergency" onClick="emergencyNow()">Emergency</span>
+    <span class="button" onClick="resetViews()">Tilbakestill</span>
+  </section>
 </body>
 </html>
